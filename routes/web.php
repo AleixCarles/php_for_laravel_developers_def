@@ -14,10 +14,15 @@ Route::get('/', function () {
     $task2->title = "Task 2";
     $task2->description = "blablavbla";
     $task2->completed = 1;
-
+    $task3 = new stdClass();
+    $task3->id = 3;
+    $task3->title = "Task 3";
+    $task3->description = "blablavbla";
+    $task3->completed = 1;
     $tasks = [
         $task1,
-        $task2
+        $task2,
+        $task3
     ];
 
     return view('tasks', [
